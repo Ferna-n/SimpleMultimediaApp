@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Imagen -->
+
+    <!-- Botón para reproducir audio -->
+
+    <!-- Botón para reproducir video -->
+
+    <!-- Botón para animación -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imagen" />
+
+    <Button
+        android:id="@+id/playAudioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-179dp"
+        android:text="Play Audio" />
+
+    <Button
+        android:id="@+id/playVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playAudioButton"
+        android:layout_marginTop="20dp"
+        android:text="Play Video" />
+
+    <!-- VideoView para reproducir video -->
+    <Button
+        android:id="@+id/animateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playVideoButton"
+        android:layout_marginTop="19dp"
+        android:text="Animate" />
+
+    <VideoView
+        android:id="@+id/myVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/animateButton"
+        android:layout_marginTop="-732dp"
+        android:soundEffectsEnabled="false" />
+</RelativeLayout>
